@@ -26,3 +26,8 @@ class Solution:
                 if i%2==0:
                     j+=1     
             return j 
+
+ #########optimized       
+class Solution2:
+    def findNumbers(self, nums: List[int]) -> int:
+        return len([x for x in nums if len(str(x)) % 2 == 0])
